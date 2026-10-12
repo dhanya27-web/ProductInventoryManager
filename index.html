@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Inventory Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Inventory Manager</h1>
+        <p>Manage your store products easily.</p>
+
+        <div class="summary">
+            <div class="card">
+                <h3>Total Products</h3>
+                <p id="totalProducts">0</p>
+            </div>
+            <div class="card">
+                <h3>In Stock</h3>
+                <p id="inStockCount">0</p>
+            </div>
+        </div>
+
+        <h2>Add New Product</h2>
+
+        <form id="productForm">
+            <input type="text" id="productName"
+                placeholder="Product name" required>
+
+            <input type="number" id="productPrice"
+                placeholder="Price (₹)" min="0.01"
+                step="0.01" required>
+
+            <input type="number" id="productQuantity"
+                placeholder="Quantity" min="0"
+                step="1" required>
+
+            <input type="text" id="productTags"
+                placeholder="Tags (optional, comma-separated)">
+
+            <button type="submit">Add Product</button>
+        </form>
+
+        <h2>Search Products</h2>
+        <input type="text" id="searchInput"
+            placeholder="Search by product name">
+
+        <h2>Product List</h2>
+        <div id="productList"></div>
+    </div>
+
+    <script src="inventory.js"></script>
+</body>
+</html>

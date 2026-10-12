@@ -1,0 +1,110 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+    color: #243247;
+}
+
+.container {
+    max-width: 850px;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+h1 {
+    text-align: center;
+    color: #174a7e;
+}
+
+.container > p {
+    text-align: center;
+    color: #64748b;
+}
+
+.summary {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.card {
+    flex: 1;
+    background: #eaf2ff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card p {
+    font-size: 26px;
+    font-weight: bold;
+    color: #174a7e;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: #174a7e;
+}
+
+.product {
+    border: 1px solid #dbe3ed;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.product h3 {
+    margin-top: 0;
+}
+
+.available {
+    color: #15803d;
+    font-weight: bold;
+}
+
+.unavailable {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+.delete-btn:hover {
+    background: #991b1b;
+}
+
+@media (max-width: 500px) {
+    .summary {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
